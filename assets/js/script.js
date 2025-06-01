@@ -46,8 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             } else {
                 console.error('Função getUsuarioLogadoEmail não definida. Não é possível proteger a página.');
-                // Fallback opcional: redirecionar se a função não existir.
-                // window.location.href = '/assets/paginas/cadastro-login.html'; 
             }
         }
     }

@@ -1,4 +1,4 @@
-/*Variáveis, Reset e Fontes*/
+/* Estilos Gerais da página principal */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Poppins:wght@600;700;800&display=swap');
 
 :root {
@@ -735,8 +735,6 @@ h3 {
 
 /* Media Queries */
 
-
-/*Responsividade e Breakpoints*/
 @media (max-width: 1190px) {
     .header-container {
         position: relative;

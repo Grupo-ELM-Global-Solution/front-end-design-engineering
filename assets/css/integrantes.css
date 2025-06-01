@@ -1,0 +1,145 @@
+/* Estilos Gerais da Página Integrantes */
+
+main.page-integrantes {
+    padding-top: var(--header-height);
+}
+
+/* Seção Hero da Página Equipe */
+.equipe-hero {
+    background-color: var(--color-background-hero);
+    padding: 50px 0;
+    text-align: center;
+}
+.equipe-hero h1 {
+    color: #1E293B;
+    margin-bottom: 0.4em;
+}
+.equipe-hero .short-subtitle {
+    font-size: 1.1rem;
+    color: #4B5563;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Seção Membros da Equipe */
+.membros-equipe-section {
+    padding: 60px 0;
+    background-color: var(--color-background-light);
+}
+
+.equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.integrante-card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-speed-fast) var(--transition-easing),
+                box-shadow var(--transition-speed) var(--transition-easing);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.integrante-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.integrante-foto {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #E0F2FE;
+}
+
+.integrante-info h3 {
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.integrante-info .integrante-rm,
+.integrante-info .integrante-turma {
+    font-size: 0.95rem;
+    color: var(--color-text-medium);
+    margin-bottom: 4px;
+}
+
+.integrante-info .integrante-turma {
+    margin-bottom: 15px;
+}
+
+.integrante-redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: auto;
+}
+
+.integrante-redes .social-icon {
+    width: 28px;
+    height: 28px;
+    opacity: 0.7;
+    transition: opacity var(--transition-speed) ease, transform var(--transition-speed-fast) ease;
+}
+
+.integrante-redes a:hover .social-icon {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Seção Sobre o Projeto Recomeço */
+.sobre-projeto-recomeco-section {
+    padding: 60px 0;
+    background-color: var(--color-background-section-alt);
+}
+
+.sobre-projeto-content {
+    background-color: #fff;
+    padding: 30px 35px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+}
+
+.sobre-projeto-content h2 {
+    text-align: center;
+    margin-bottom: 1.2em;
+    color: var(--color-primary-dark);
+    font-size: 1.8rem;
+}
+
+.sobre-projeto-content p {
+    font-size: 1rem;
+    color: var(--color-text-medium);
+    line-height: 1.8;
+    margin-bottom: 1.2em;
+}
+.sobre-projeto-content p:last-child {
+    margin-bottom: 0;
+}
+.sobre-projeto-content strong {
+    font-weight: 700;
+    color: var(--color-text-dark);
+}
+.sobre-projeto-content a {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary-dark);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+.sobre-projeto-content a:hover {
+    color: var(--color-primary-dark);
+    text-decoration-color: var(--color-primary);
+}

@@ -69,7 +69,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const logoutButtons = document.querySelectorAll('.btn-logout');
         let basePath = '/';
         if (window.location.hostname.includes('github.io')) {
-            basePath = '/front-end-design-engineering/';
+            // Extrai o primeiro segmento do pathname (ex: /front-end-design-engineering/)
+            const pathParts = window.location.pathname.split('/');
+            if (pathParts.length > 1 && pathParts[1]) {
+                basePath = '/' + pathParts[1] + '/';
+            }
         }
         logoutButtons.forEach(button => {
             button.setAttribute('href', basePath + 'index.html');

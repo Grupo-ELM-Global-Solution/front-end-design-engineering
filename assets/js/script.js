@@ -65,6 +65,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function ajustarLinksLogoutParaAmbiente() {
+        const logoutButtons = document.querySelectorAll('.btn-logout');
+        let basePath = '/';
+        if (window.location.hostname.includes('github.io')) {
+            basePath = '/front-end-design-engineering/';
+        }
+        logoutButtons.forEach(button => {
+            button.setAttribute('href', basePath + 'index.html');
+        });
+    }
+
     protegerPaginasAreaUsuario();
     configurarBotoesLogoutGlobais();
+    ajustarLinksLogoutParaAmbiente();
 });

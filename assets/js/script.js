@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (typeof getUsuarioLogadoEmail === 'function') {
                 if (!getUsuarioLogadoEmail()) {
                     console.log("Usuário não logado, redirecionando para a página de login desde script.js.");
-                    window.location.href = './cadastro-login.html';
+                    window.location.href = '../cadastro-login.html';
                 }
             } else {
                 console.error('Função getUsuarioLogadoEmail não definida. Não é possível proteger a página.');

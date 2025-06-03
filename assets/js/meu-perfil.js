@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (typeof getDadosUsuarioLogado !== 'function' || !getDadosUsuarioLogado()) {
             // A proteção global já deve ter redirecionado, mas como segurança adicional:
             alert("Você precisa estar logado para editar o perfil.");
-             // window.location.href = '/assets/paginas/cadastro-login.html'; // Opcional, pois script.js já faz
             return;
         }
         // displayUserData já deve ter sido chamado ou será chamado, mas podemos garantir que os dados do form estão atualizados

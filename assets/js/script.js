@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- LÓGICA GLOBAL DE AUTENTICAÇÃO ---
     function protegerPaginasAreaUsuario() {
         const paginasProtegidas = [
-            '/assets/paginas/area-usuario/meu-perfil.html',
-            '/assets/paginas/area-usuario/diario-usuario.html',
-            '/assets/paginas/area-usuario/mapa-usuario.html',
-            '/assets/paginas/area-usuario/tecnicas-autocuidado.html'
+            'meu-perfil.html',
+            'diario-usuario.html',
+            'mapa-usuario.html',
+            'tecnicas-autocuidado.html'
         ];
         const paginaAtual = window.location.pathname;
         const ehPaginaProtegida = paginasProtegidas.some(p => paginaAtual.endsWith(p));
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     console.error('Função fazerLogout não definida. Logout manual.');
                     localStorage.removeItem('recomecoUsuarioLogadoEmail'); 
-                    window.location.href = '/index.html';
+                    window.location.href = 'index.html';
                 }
             });
         });

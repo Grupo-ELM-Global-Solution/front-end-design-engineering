@@ -59,8 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     fazerLogout();
                 } else {
                     console.error('Função fazerLogout não definida. Logout manual.');
-                    localStorage.removeItem('recomecoUsuarioLogadoEmail'); 
-                    window.location.href = 'index.html';
+                    localStorage.removeItem('recomecoUsuarioLogadoEmail');
                 }
             });
         });

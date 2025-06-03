@@ -65,22 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function ajustarLinksLogoutParaAmbiente() {
-        const logoutButtons = document.querySelectorAll('.btn-logout');
-        let basePath = '/';
-        if (window.location.hostname.includes('github.io')) {
-            // Extrai o primeiro segmento do pathname (ex: /front-end-design-engineering/)
-            const pathParts = window.location.pathname.split('/');
-            if (pathParts.length > 1 && pathParts[1]) {
-                basePath = '/' + pathParts[1] + '/';
-            }
-        }
-        logoutButtons.forEach(button => {
-            button.setAttribute('href', basePath + 'index.html');
-        });
-    }
-
     protegerPaginasAreaUsuario();
     configurarBotoesLogoutGlobais();
-    ajustarLinksLogoutParaAmbiente();
 });

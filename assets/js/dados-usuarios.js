@@ -81,7 +81,7 @@ function getDadosUsuarioLogado() {
 
 function fazerLogout() {
     localStorage.removeItem(USUARIO_LOGADO_EMAIL_KEY);
-    window.location.href = '../index.html';
+    window.location.href = '../../index.html';
 }
 
 function atualizarDadosUsuarioLogado(novosDados) {

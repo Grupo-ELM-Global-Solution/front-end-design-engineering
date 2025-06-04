@@ -1,0 +1,87 @@
+/* Estilos Gerais da Página Mapa de Usuário */
+
+.page-mapa-usuario {
+    padding-top: var(--header-height);
+    background-color: var(--color-background-section-alt);
+    min-height: calc(100vh - var(--header-height) - var(--footer-height, 0px));
+}
+
+.mapa-title-section {
+    background-color: var(--color-secondary-light, #d1e7dd);
+    color: var(--color-secondary-dark, #155724);
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.mapa-title-section h1 {
+    color: var(--color-secondary-darker, #0c2f14);
+}
+
+.mapa-content-section {
+    padding-bottom: 40px;
+}
+
+/* Estilos para a caixa de instruções do mapa */
+.mapa-instrucoes {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: var(--border-radius);
+    border: 1px solid #e9ecef;
+}
+
+.mapa-instrucoes h4 {
+    margin-top: 0;
+    color: var(--color-primary-dark);
+    margin-bottom: 10px;
+}
+
+.mapa-instrucoes ol {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.mapa-instrucoes ol li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.mapa-instrucoes ol li img { 
+    height: 1em;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+
+.mapa-instrucoes .mapa-instrucoes-nota {
+    font-size: 0.85em;
+    margin-top: 15px;
+    color: #6c757d;
+}
+
+/* Container e estilos para o iframe do mapa */
+.mapa-container iframe {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-light);
+}
+
+.map-info-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: var(--color-text-medium);
+}
+.map-info-text a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+.map-info-text a:hover {
+    color: var(--color-primary-dark);
+}
+
+.text-center-container {
+    text-align: center;
+}
+
+.btn-voltar-inicio {
+    margin-top: 30px;
+} 

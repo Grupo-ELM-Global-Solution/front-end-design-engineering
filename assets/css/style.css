@@ -873,7 +873,6 @@ h3 {
     .hero-section { 
         padding-top: calc(var(--header-height) + 80px); 
         padding-bottom: 20px; 
-        min-height: auto; 
     }
     .hero-section h1 { font-size: 1.5rem; line-height: 1.2; }
     .hero-subtitle { font-size: 0.9rem; margin: 1em auto 1.5em auto; }

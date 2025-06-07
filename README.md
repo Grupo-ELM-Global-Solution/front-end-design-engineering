@@ -38,6 +38,7 @@ O projeto está organizado da seguinte forma:
 |   |-- imagens/
 |       |-- icone-logo.png (Logotipo principal da plataforma)
 |       |-- imagens-integrantes/ (Fotos dos integrantes da equipe)
+|       |-- icons/ (Ícones utilizados na interface)
 |   |-- paginas/
 |       |-- autocuidado.html
 |       |-- cadastro-login.html

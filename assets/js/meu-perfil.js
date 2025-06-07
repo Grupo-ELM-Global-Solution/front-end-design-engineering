@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const profileNameElement = document.getElementById('profileName');
     const profileEmailElement = document.getElementById('profileEmail');
-    const profilePictureImgElement = document.getElementById('profilePictureImg');
-    const genericProfilePicUrl = "https://cdn-icons-png.flaticon.com/512/9706/9706583.png";
 
     // Modal elements
     const editProfileModal = document.getElementById('editProfileModal');
@@ -19,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error("Função getDadosUsuarioLogado não encontrada. Verifique a ordem de carregamento dos scripts.");
             if (profileNameElement) profileNameElement.textContent = "Erro ao carregar dados";
             if (profileEmailElement) profileEmailElement.textContent = "-";
-            if (profilePictureImgElement) profilePictureImgElement.src = genericProfilePicUrl;
             return;
         }
 
@@ -27,9 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentUser) {
             if (profileNameElement) profileNameElement.textContent = currentUser.nomeCompleto;
             if (profileEmailElement) profileEmailElement.textContent = currentUser.email;
-            if (profilePictureImgElement) {
-                profilePictureImgElement.src = currentUser.fotoUrl || genericProfilePicUrl;
-            }
             // Preenche campos do formulário do modal se o modal e o formulário existirem
             if (editProfileModal && editProfileForm && editProfileForm.elements.length > 0) { 
                 editProfileForm.nomeCompleto.value = currentUser.nomeCompleto || '';
@@ -41,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.warn("Página de perfil acessada sem usuário logado ou dados não encontrados.");
             if (profileNameElement) profileNameElement.textContent = "Visitante";
             if (profileEmailElement) profileEmailElement.textContent = "N/A";
-            if (profilePictureImgElement) profilePictureImgElement.src = genericProfilePicUrl;
         }
     }
 
